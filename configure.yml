@@ -1,0 +1,12 @@
+---
+# Deploy single page sample website
+# ansible-playbook -i hosts configure.yml --ask-become-pass
+- hosts: hyd
+  become: yes
+  
+  roles:
+    - apache
+    - samplerole
+
+
+
